@@ -57,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				5289D28D2B572C3A00E8C3DB /* FetchDessertsUIKit */,
+				5289D2922B572C3A00E8C3DB /* ViewController.swift */,
 				5289D28C2B572C3A00E8C3DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,12 +73,7 @@
 		5289D28D2B572C3A00E8C3DB /* FetchDessertsUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				5289D28E2B572C3A00E8C3DB /* AppDelegate.swift */,
-				5289D2902B572C3A00E8C3DB /* SceneDelegate.swift */,
-				5289D2922B572C3A00E8C3DB /* ViewController.swift */,
-				5289D2972B572C3C00E8C3DB /* Assets.xcassets */,
-				5289D2992B572C3C00E8C3DB /* LaunchScreen.storyboard */,
-				5289D29C2B572C3C00E8C3DB /* Info.plist */,
+				5289D2B92B57348000E8C3DB /* Support */,
 				5289D2B82B5731D800E8C3DB /* Extensions */,
 				5289D2A22B57317E00E8C3DB /* Services */,
 				5289D2AC2B5731A000E8C3DB /* Models */,
@@ -129,6 +125,18 @@
 				5289D2B62B5731D200E8C3DB /* URLSession+SessionProtocol.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5289D2B92B57348000E8C3DB /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				5289D28E2B572C3A00E8C3DB /* AppDelegate.swift */,
+				5289D2902B572C3A00E8C3DB /* SceneDelegate.swift */,
+				5289D2972B572C3C00E8C3DB /* Assets.xcassets */,
+				5289D2992B572C3C00E8C3DB /* LaunchScreen.storyboard */,
+				5289D29C2B572C3C00E8C3DB /* Info.plist */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,7 +366,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5MHQLWW6Y5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FetchDessertsUIKit/Info.plist;
+				INFOPLIST_FILE = FetchDessertsUIKit/Support/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Dessert UIKit";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -386,7 +394,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5MHQLWW6Y5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FetchDessertsUIKit/Info.plist;
+				INFOPLIST_FILE = FetchDessertsUIKit/Support/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Dessert UIKit";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
