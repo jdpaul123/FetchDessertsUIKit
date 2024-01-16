@@ -20,8 +20,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ViewController()
+        window?.rootViewController = configureNavigationController()
         window?.makeKeyAndVisible()
+    }
+
+    func configureNavigationController() -> UINavigationController {
+        let navigationController = UINavigationController(rootViewController: DessertListScreenViewController())
+        navigationController.navigationBar.tintColor = UIColor(resource: .accent)
+        return navigationController
     }
 }
 

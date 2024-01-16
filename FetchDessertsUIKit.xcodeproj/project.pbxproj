@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5289D28F2B572C3A00E8C3DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289D28E2B572C3A00E8C3DB /* AppDelegate.swift */; };
 		5289D2912B572C3A00E8C3DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289D2902B572C3A00E8C3DB /* SceneDelegate.swift */; };
-		5289D2932B572C3A00E8C3DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289D2922B572C3A00E8C3DB /* ViewController.swift */; };
+		5289D2932B572C3A00E8C3DB /* DessertListScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289D2922B572C3A00E8C3DB /* DessertListScreenViewController.swift */; };
 		5289D2982B572C3C00E8C3DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5289D2972B572C3C00E8C3DB /* Assets.xcassets */; };
 		5289D29B2B572C3C00E8C3DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5289D2992B572C3C00E8C3DB /* LaunchScreen.storyboard */; };
 		5289D2A82B57317E00E8C3DB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289D2A32B57317E00E8C3DB /* DataService.swift */; };
@@ -27,7 +27,7 @@
 		5289D28B2B572C3A00E8C3DB /* FetchDessertsUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchDessertsUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5289D28E2B572C3A00E8C3DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5289D2902B572C3A00E8C3DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5289D2922B572C3A00E8C3DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5289D2922B572C3A00E8C3DB /* DessertListScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListScreenViewController.swift; sourceTree = "<group>"; };
 		5289D2972B572C3C00E8C3DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5289D29A2B572C3C00E8C3DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5289D29C2B572C3C00E8C3DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				5289D28D2B572C3A00E8C3DB /* FetchDessertsUIKit */,
-				5289D2922B572C3A00E8C3DB /* ViewController.swift */,
+				5289D2922B572C3A00E8C3DB /* DessertListScreenViewController.swift */,
 				5289D28C2B572C3A00E8C3DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 				5289D2AA2B57317E00E8C3DB /* NetworkException.swift in Sources */,
 				5289D2B22B5731A000E8C3DB /* DessertDetailsDTO.swift in Sources */,
 				5289D2A92B57317E00E8C3DB /* NetworkService.swift in Sources */,
-				5289D2932B572C3A00E8C3DB /* ViewController.swift in Sources */,
+				5289D2932B572C3A00E8C3DB /* DessertListScreenViewController.swift in Sources */,
 				5289D28F2B572C3A00E8C3DB /* AppDelegate.swift in Sources */,
 				5289D2B32B5731A000E8C3DB /* DessertsDTO.swift in Sources */,
 				5289D2AB2B57317E00E8C3DB /* SessionProtocol.swift in Sources */,

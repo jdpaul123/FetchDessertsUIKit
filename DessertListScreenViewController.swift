@@ -7,7 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DessertListScreenViewController: UIViewController {
+    enum Section {
+        case main
+    }
+    var tableView: UITableView!
+    var dataSource: UITableViewDiffableDataSource<Section, Dessert>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
