@@ -13,6 +13,15 @@
 		5289D2962B572C3A00E8C3DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5289D2942B572C3A00E8C3DB /* Main.storyboard */; };
 		5289D2982B572C3C00E8C3DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5289D2972B572C3C00E8C3DB /* Assets.xcassets */; };
 		5289D29B2B572C3C00E8C3DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5289D2992B572C3C00E8C3DB /* LaunchScreen.storyboard */; };
+		5289D2A82B57317E00E8C3DB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289D2A32B57317E00E8C3DB /* DataService.swift */; };
+		5289D2A92B57317E00E8C3DB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289D2A52B57317E00E8C3DB /* NetworkService.swift */; };
+		5289D2AA2B57317E00E8C3DB /* NetworkException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289D2A62B57317E00E8C3DB /* NetworkException.swift */; };
+		5289D2AB2B57317E00E8C3DB /* SessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289D2A72B57317E00E8C3DB /* SessionProtocol.swift */; };
+		5289D2B22B5731A000E8C3DB /* DessertDetailsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289D2AE2B5731A000E8C3DB /* DessertDetailsDTO.swift */; };
+		5289D2B32B5731A000E8C3DB /* DessertsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289D2AF2B5731A000E8C3DB /* DessertsDTO.swift */; };
+		5289D2B42B5731A000E8C3DB /* Dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289D2B02B5731A000E8C3DB /* Dessert.swift */; };
+		5289D2B52B5731A000E8C3DB /* DessertDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289D2B12B5731A000E8C3DB /* DessertDetails.swift */; };
+		5289D2B72B5731D200E8C3DB /* URLSession+SessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289D2B62B5731D200E8C3DB /* URLSession+SessionProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		5289D2972B572C3C00E8C3DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5289D29A2B572C3C00E8C3DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5289D29C2B572C3C00E8C3DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5289D2A32B57317E00E8C3DB /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		5289D2A52B57317E00E8C3DB /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		5289D2A62B57317E00E8C3DB /* NetworkException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkException.swift; sourceTree = "<group>"; };
+		5289D2A72B57317E00E8C3DB /* SessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionProtocol.swift; sourceTree = "<group>"; };
+		5289D2AE2B5731A000E8C3DB /* DessertDetailsDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DessertDetailsDTO.swift; sourceTree = "<group>"; };
+		5289D2AF2B5731A000E8C3DB /* DessertsDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DessertsDTO.swift; sourceTree = "<group>"; };
+		5289D2B02B5731A000E8C3DB /* Dessert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dessert.swift; sourceTree = "<group>"; };
+		5289D2B12B5731A000E8C3DB /* DessertDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DessertDetails.swift; sourceTree = "<group>"; };
+		5289D2B62B5731D200E8C3DB /* URLSession+SessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+SessionProtocol.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +81,57 @@
 				5289D2972B572C3C00E8C3DB /* Assets.xcassets */,
 				5289D2992B572C3C00E8C3DB /* LaunchScreen.storyboard */,
 				5289D29C2B572C3C00E8C3DB /* Info.plist */,
+				5289D2B82B5731D800E8C3DB /* Extensions */,
+				5289D2A22B57317E00E8C3DB /* Services */,
+				5289D2AC2B5731A000E8C3DB /* Models */,
 			);
 			path = FetchDessertsUIKit;
+			sourceTree = "<group>";
+		};
+		5289D2A22B57317E00E8C3DB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5289D2A32B57317E00E8C3DB /* DataService.swift */,
+				5289D2A42B57317E00E8C3DB /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5289D2A42B57317E00E8C3DB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5289D2A52B57317E00E8C3DB /* NetworkService.swift */,
+				5289D2A62B57317E00E8C3DB /* NetworkException.swift */,
+				5289D2A72B57317E00E8C3DB /* SessionProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5289D2AC2B5731A000E8C3DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5289D2AD2B5731A000E8C3DB /* DTOModels */,
+				5289D2B02B5731A000E8C3DB /* Dessert.swift */,
+				5289D2B12B5731A000E8C3DB /* DessertDetails.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5289D2AD2B5731A000E8C3DB /* DTOModels */ = {
+			isa = PBXGroup;
+			children = (
+				5289D2AE2B5731A000E8C3DB /* DessertDetailsDTO.swift */,
+				5289D2AF2B5731A000E8C3DB /* DessertsDTO.swift */,
+			);
+			path = DTOModels;
+			sourceTree = "<group>";
+		};
+		5289D2B82B5731D800E8C3DB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5289D2B62B5731D200E8C3DB /* URLSession+SessionProtocol.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +205,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5289D2B42B5731A000E8C3DB /* Dessert.swift in Sources */,
+				5289D2AA2B57317E00E8C3DB /* NetworkException.swift in Sources */,
+				5289D2B22B5731A000E8C3DB /* DessertDetailsDTO.swift in Sources */,
+				5289D2A92B57317E00E8C3DB /* NetworkService.swift in Sources */,
 				5289D2932B572C3A00E8C3DB /* ViewController.swift in Sources */,
 				5289D28F2B572C3A00E8C3DB /* AppDelegate.swift in Sources */,
+				5289D2B32B5731A000E8C3DB /* DessertsDTO.swift in Sources */,
+				5289D2AB2B57317E00E8C3DB /* SessionProtocol.swift in Sources */,
 				5289D2912B572C3A00E8C3DB /* SceneDelegate.swift in Sources */,
+				5289D2B52B5731A000E8C3DB /* DessertDetails.swift in Sources */,
+				5289D2B72B5731D200E8C3DB /* URLSession+SessionProtocol.swift in Sources */,
+				5289D2A82B57317E00E8C3DB /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +371,7 @@
 				DEVELOPMENT_TEAM = 5MHQLWW6Y5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FetchDessertsUIKit/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Fetch Dessert UIKit";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dessert UIKit";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -323,7 +399,7 @@
 				DEVELOPMENT_TEAM = 5MHQLWW6Y5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FetchDessertsUIKit/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Fetch Dessert UIKit";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dessert UIKit";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
