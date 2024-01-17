@@ -32,6 +32,7 @@ final class DessertTableViewCell: UITableViewCell {
     func configure() {
         contentView.addSubview(dessertImageView)
         contentView.addSubview(dessertTitleLabel)
+        accessoryType = .disclosureIndicator
 
         NSLayoutConstraint.activate([
             dessertImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
@@ -40,7 +41,7 @@ final class DessertTableViewCell: UITableViewCell {
             dessertImageView.heightAnchor.constraint(equalToConstant: 115),
 
             dessertTitleLabel.leadingAnchor.constraint(equalTo: dessertImageView.trailingAnchor, constant: 10),
-            dessertTitleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            dessertTitleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
             dessertTitleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
         ])
     }
