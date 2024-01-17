@@ -28,8 +28,10 @@ final class FDImageView: UIImageView {
         translatesAutoresizingMaskIntoConstraints = false
     }
 
-    // TODO: Fill this function out
-    func getImage() async {
-
-    }
+//    func getImage(from url: URL) async {
+//        let data = try? await Injector.shared.dataService.getImageData(from: url)
+//        if let data {
+//            image = UIImage(data: data)
+//        }
+//    }
 }

@@ -56,6 +56,17 @@ final class DessertListScreenViewController: UIViewController, UITableViewDelega
             if let desserts = try? await injector.dataService.getDesserts() {
                 self.desserts = desserts
                 updateData()
+                getImages()
+            }
+        }
+    }
+
+    private func getImages() {
+        Task { [weak self] in
+            guard let self else { return }
+            for (index, dessert) in desserts.enumerated() {
+                self.desserts[index].photoData = try? await injector.dataService.getImageData(from: dessert.thumbnailURL)
+                updateData(animatingDifferences: false)
             }
         }
     }
@@ -68,11 +79,11 @@ final class DessertListScreenViewController: UIViewController, UITableViewDelega
         })
     }
 
-    private func updateData() {
+    private func updateData(animatingDifferences: Bool = true) {
         var snapshot = NSDiffableDataSourceSnapshot<Section, Dessert>()
         snapshot.appendSections([.main])
         snapshot.appendItems(desserts)
-        dataSource.apply(snapshot, animatingDifferences: true)
+        dataSource.apply(snapshot, animatingDifferences: animatingDifferences)
     }
 
 

@@ -24,9 +24,9 @@ final class DessertTableViewCell: UITableViewCell {
 
     func set(dessert: Dessert) {
         dessertTitleLabel.text = dessert.name
-//        Task {
-//            await dessertImageView.getImage() // TODO: Fill this funciton out to take the URL and get the image
-//        }
+        if let imageData = dessert.photoData {
+            dessertImageView.image = UIImage(data: imageData)
+        }
     }
 
     func configure() {

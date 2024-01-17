@@ -17,4 +17,5 @@ struct Dessert: Codable, Identifiable, Hashable {
     let id: String
     let name: String
     let thumbnailURL: URL
+    var photoData: Data?
 }
