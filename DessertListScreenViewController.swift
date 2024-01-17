@@ -44,6 +44,7 @@ final class DessertListScreenViewController: UIViewController, UITableViewDelega
     /// Configures the table view to display the desserts.
     private func configureTableView() {
         tableView = UITableView(frame: view.bounds, style: .insetGrouped)
+        tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.register(DessertTableViewCell.self, forCellReuseIdentifier: DessertTableViewCell.resuseIdentifier)
         view.addSubview(tableView)
@@ -74,8 +75,10 @@ final class DessertListScreenViewController: UIViewController, UITableViewDelega
         dataSource.apply(snapshot, animatingDifferences: true)
     }
 
+
+    // MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        100
+        138
     }
 }
 
