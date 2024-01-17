@@ -10,6 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    let injector = Injector()
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -25,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func configureNavigationController() -> UINavigationController {
-        let navigationController = UINavigationController(rootViewController: DessertListScreenViewController())
+        let navigationController = UINavigationController(rootViewController: DessertListScreenViewController(injector: injector))
         navigationController.navigationBar.tintColor = UIColor(resource: .accent)
         return navigationController
     }
