@@ -27,11 +27,4 @@ final class FDImageView: UIImageView {
         contentMode = .scaleAspectFit
         translatesAutoresizingMaskIntoConstraints = false
     }
-
-//    func getImage(from url: URL) async {
-//        let data = try? await Injector.shared.dataService.getImageData(from: url)
-//        if let data {
-//            image = UIImage(data: data)
-//        }
-//    }
 }

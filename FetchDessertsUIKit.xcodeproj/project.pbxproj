@@ -21,10 +21,15 @@
 		5289D2B42B5731A000E8C3DB /* Dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289D2B02B5731A000E8C3DB /* Dessert.swift */; };
 		5289D2B52B5731A000E8C3DB /* DessertDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289D2B12B5731A000E8C3DB /* DessertDetails.swift */; };
 		5289D2B72B5731D200E8C3DB /* URLSession+SessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289D2B62B5731D200E8C3DB /* URLSession+SessionProtocol.swift */; };
-		52E4A3A92B573AB200D7ED0E /* DessertCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3A82B573AB200D7ED0E /* DessertCellTableViewCell.swift */; };
+		52E4A3A92B573AB200D7ED0E /* DessertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3A82B573AB200D7ED0E /* DessertTableViewCell.swift */; };
 		52E4A3AB2B573B3A00D7ED0E /* FDTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3AA2B573B3A00D7ED0E /* FDTitleLabel.swift */; };
 		52E4A3AD2B573B6800D7ED0E /* FDImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3AC2B573B6800D7ED0E /* FDImageView.swift */; };
 		52E4A3AF2B57407400D7ED0E /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3AE2B57407400D7ED0E /* Injector.swift */; };
+		52E4A3B42B57AF3A00D7ED0E /* DessertDetailScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3B32B57AF3A00D7ED0E /* DessertDetailScreenViewController.swift */; };
+		52E4A3B62B57B48000D7ED0E /* DessertImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3B52B57B48000D7ED0E /* DessertImageTableViewCell.swift */; };
+		52E4A3B82B57B49600D7ED0E /* DessertIngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3B72B57B49600D7ED0E /* DessertIngredientTableViewCell.swift */; };
+		52E4A3BA2B57B4C400D7ED0E /* DessertInstructionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3B92B57B4C400D7ED0E /* DessertInstructionTableViewCell.swift */; };
+		52E4A3BC2B57B7E900D7ED0E /* FDBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3BB2B57B7E900D7ED0E /* FDBodyLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,10 +49,15 @@
 		5289D2B02B5731A000E8C3DB /* Dessert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dessert.swift; sourceTree = "<group>"; };
 		5289D2B12B5731A000E8C3DB /* DessertDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DessertDetails.swift; sourceTree = "<group>"; };
 		5289D2B62B5731D200E8C3DB /* URLSession+SessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+SessionProtocol.swift"; sourceTree = "<group>"; };
-		52E4A3A82B573AB200D7ED0E /* DessertCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertCellTableViewCell.swift; sourceTree = "<group>"; };
+		52E4A3A82B573AB200D7ED0E /* DessertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertTableViewCell.swift; sourceTree = "<group>"; };
 		52E4A3AA2B573B3A00D7ED0E /* FDTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDTitleLabel.swift; sourceTree = "<group>"; };
 		52E4A3AC2B573B6800D7ED0E /* FDImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDImageView.swift; sourceTree = "<group>"; };
 		52E4A3AE2B57407400D7ED0E /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		52E4A3B32B57AF3A00D7ED0E /* DessertDetailScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailScreenViewController.swift; sourceTree = "<group>"; };
+		52E4A3B52B57B48000D7ED0E /* DessertImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertImageTableViewCell.swift; sourceTree = "<group>"; };
+		52E4A3B72B57B49600D7ED0E /* DessertIngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertIngredientTableViewCell.swift; sourceTree = "<group>"; };
+		52E4A3B92B57B4C400D7ED0E /* DessertInstructionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertInstructionTableViewCell.swift; sourceTree = "<group>"; };
+		52E4A3BB2B57B7E900D7ED0E /* FDBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDBodyLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				5289D28D2B572C3A00E8C3DB /* FetchDessertsUIKit */,
-				5289D2922B572C3A00E8C3DB /* DessertListScreenViewController.swift */,
-				52E4A3A82B573AB200D7ED0E /* DessertCellTableViewCell.swift */,
-				52E4A3AA2B573B3A00D7ED0E /* FDTitleLabel.swift */,
-				52E4A3AC2B573B6800D7ED0E /* FDImageView.swift */,
 				5289D28C2B572C3A00E8C3DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +94,7 @@
 				5289D2B92B57348000E8C3DB /* Support */,
 				5289D2B82B5731D800E8C3DB /* Extensions */,
 				5289D2A22B57317E00E8C3DB /* Services */,
+				52E4A3B22B57AEDF00D7ED0E /* Views */,
 				5289D2AC2B5731A000E8C3DB /* Models */,
 			);
 			path = FetchDessertsUIKit;
@@ -149,6 +156,38 @@
 				5289D29C2B572C3C00E8C3DB /* Info.plist */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		52E4A3B02B57AEBB00D7ED0E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5289D2922B572C3A00E8C3DB /* DessertListScreenViewController.swift */,
+				52E4A3B32B57AF3A00D7ED0E /* DessertDetailScreenViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		52E4A3B12B57AEC600D7ED0E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				52E4A3A82B573AB200D7ED0E /* DessertTableViewCell.swift */,
+				52E4A3B52B57B48000D7ED0E /* DessertImageTableViewCell.swift */,
+				52E4A3B72B57B49600D7ED0E /* DessertIngredientTableViewCell.swift */,
+				52E4A3B92B57B4C400D7ED0E /* DessertInstructionTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		52E4A3B22B57AEDF00D7ED0E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52E4A3B02B57AEBB00D7ED0E /* Screens */,
+				52E4A3B12B57AEC600D7ED0E /* Cells */,
+				52E4A3AA2B573B3A00D7ED0E /* FDTitleLabel.swift */,
+				52E4A3BB2B57B7E900D7ED0E /* FDBodyLabel.swift */,
+				52E4A3AC2B573B6800D7ED0E /* FDImageView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,21 +261,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				5289D2B42B5731A000E8C3DB /* Dessert.swift in Sources */,
+				52E4A3BC2B57B7E900D7ED0E /* FDBodyLabel.swift in Sources */,
 				5289D2AA2B57317E00E8C3DB /* NetworkException.swift in Sources */,
 				5289D2B22B5731A000E8C3DB /* DessertDetailsDTO.swift in Sources */,
 				5289D2A92B57317E00E8C3DB /* NetworkService.swift in Sources */,
-				52E4A3A92B573AB200D7ED0E /* DessertCellTableViewCell.swift in Sources */,
+				52E4A3A92B573AB200D7ED0E /* DessertTableViewCell.swift in Sources */,
 				52E4A3AD2B573B6800D7ED0E /* FDImageView.swift in Sources */,
 				5289D2932B572C3A00E8C3DB /* DessertListScreenViewController.swift in Sources */,
 				52E4A3AF2B57407400D7ED0E /* Injector.swift in Sources */,
+				52E4A3B82B57B49600D7ED0E /* DessertIngredientTableViewCell.swift in Sources */,
 				5289D28F2B572C3A00E8C3DB /* AppDelegate.swift in Sources */,
 				52E4A3AB2B573B3A00D7ED0E /* FDTitleLabel.swift in Sources */,
 				5289D2B32B5731A000E8C3DB /* DessertsDTO.swift in Sources */,
 				5289D2AB2B57317E00E8C3DB /* SessionProtocol.swift in Sources */,
 				5289D2912B572C3A00E8C3DB /* SceneDelegate.swift in Sources */,
+				52E4A3B42B57AF3A00D7ED0E /* DessertDetailScreenViewController.swift in Sources */,
+				52E4A3B62B57B48000D7ED0E /* DessertImageTableViewCell.swift in Sources */,
 				5289D2B52B5731A000E8C3DB /* DessertDetails.swift in Sources */,
 				5289D2B72B5731D200E8C3DB /* URLSession+SessionProtocol.swift in Sources */,
 				5289D2A82B57317E00E8C3DB /* DataService.swift in Sources */,
+				52E4A3BA2B57B4C400D7ED0E /* DessertInstructionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

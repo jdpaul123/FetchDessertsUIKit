@@ -91,5 +91,11 @@ final class DessertListScreenViewController: UIViewController, UITableViewDelega
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         138
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dessertID = desserts[indexPath.row].id
+        let dessertDetailScreenViewController = DessertDetailScreenViewController(dessertID: dessertID, dessertImageURL: desserts[indexPath.row].thumbnailURL, injector: injector)
+        navigationController?.pushViewController(dessertDetailScreenViewController, animated: true)
+    }
 }
 

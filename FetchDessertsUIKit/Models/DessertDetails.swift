@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct DessertDetails {
+struct DessertDetails: Hashable {
     // 1-1 relationship between ingredients and measures
-    struct Ingredient: Codable, Identifiable {
+    struct Ingredient: Codable, Identifiable, Hashable {
         init(name: String, measure: String, id: UUID = UUID()) {
             self.id = id
             self.name = name
